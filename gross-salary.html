@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Salary Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Gross Salary Calculator</h1>
+        <form id="salary-form" class="mt-4">
+            <div class="form-group">
+                <label for="gross-salary">Gross Salary</label>
+                <input type="text" class="form-control" id="gross-salary" placeholder="Enter gross salary" required>
+            </div>
+            <div class="form-group">
+                <label for="tax">Tax (%)</label>
+                <input type="number" class="form-control" id="tax" placeholder="Enter tax percentage (e.g., 10)" required>
+            </div>
+            <div class="form-group">
+                <label for="other-deductions">Other Deductions (optional)</label>
+                <input type="text" class="form-control" id="other-deductions" placeholder="Enter other deductions">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+        </form>
+        <div id="results" class="mt-4" style="display: none;">
+            <h2 class="text-center">Results</h2>
+            <div class="form-group">
+                <label for="net-salary">Net Salary</label>
+                <input type="text" class="form-control" id="net-salary" readonly>
+            </div>
+        </div>
+        <button onclick="location.href='modul.html'" class="btn btn-secondary btn-block mt-3">Back</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
