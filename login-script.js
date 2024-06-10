@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const password = document.getElementById('password').value;
 
             // Periksa username dan password
-            if (username === 'sevima' && password === 'password') {
+            if (username === 'sevima' && password === 'password@123') {
                 // Jika username dan password benar, redirect ke halaman utama
                 window.location.href = 'modul.html';
             } else {
